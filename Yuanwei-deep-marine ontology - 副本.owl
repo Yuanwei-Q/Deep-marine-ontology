@@ -1,0 +1,644 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/hp/ontologies/2020/5/untitled-ontology-30"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/hp/ontologies/2020/5/untitled-ontology-30">
+    <Prefix name="" IRI="http://www.semanticweb.org/hp/ontologies/2020/5/untitled-ontology-30"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology/1.0</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal>Yuanwei Qu</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Angularity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Geometry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Induration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sedimentary_Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sphericity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#clast_complex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#clast_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#clastic_rock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#claystone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#deep-marine_erosional_feature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#degree_of_weathering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#depositional_complex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#depositional_system"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#depositional_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#extremely_poorly_sorting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#forming_duration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#grain_size"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#length"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#moderate_sorting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#moderately_well_sorting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mud_content"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#permeability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#poorly_sorting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#porosity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sand_content"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sandstone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sedimentary_process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sedimentary_rock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#siltstone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sorting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#thickness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#very_poorly_sorting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#very_well_sorting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#well_sorting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#width"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#composed_of"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#obj_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#obj_2"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Angularity"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Geometry"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Induration"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sedimentary_Object"/>
+        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sedimentary_Object"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002002"/>
+            <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_boundary"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sedimentary_Object"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
+            <Class IRI="#sedimentary_rock"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sedimentary_Object"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002002"/>
+            <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_boundary"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sedimentary_Object"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
+            <Class IRI="#sedimentary_rock"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sphericity"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#clast_complex"/>
+        <Class IRI="#Sedimentary_Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#clast_complex"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#composed_of"/>
+            <Class IRI="#clast_unit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#clast_unit"/>
+        <Class IRI="#Sedimentary_Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#clast_unit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
+            <Class IRI="#clastic_rock"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#clast_unit"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_constituted_by"/>
+            <Class IRI="#clastic_rock"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#clastic_rock"/>
+        <Class IRI="#sedimentary_rock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#claystone"/>
+        <Class IRI="#clastic_rock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#deep-marine_erosional_feature"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000029"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#degree_of_weathering"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#depositional_complex"/>
+        <Class IRI="#clast_complex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#depositional_complex"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002350"/>
+            <Class IRI="#depositional_system"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#depositional_complex"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#composed_of"/>
+            <Class IRI="#depositional_unit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#depositional_system"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#depositional_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
+            <Class IRI="#depositional_unit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#depositional_system"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
+            <Class IRI="#depositional_unit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#depositional_unit"/>
+        <Class IRI="#clast_unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#depositional_unit"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002350"/>
+            <Class IRI="#depositional_system"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#extremely_poorly_sorting"/>
+        <Class IRI="#sorting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#forming_duration"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#grain_size"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#length"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#moderate_sorting"/>
+        <Class IRI="#sorting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#moderately_well_sorting"/>
+        <Class IRI="#sorting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mud_content"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#permeability"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#poorly_sorting"/>
+        <Class IRI="#sorting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#porosity"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sand_content"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sandstone"/>
+        <Class IRI="#clastic_rock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sedimentary_process"/>
+        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sedimentary_rock"/>
+        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_rock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#siltstone"/>
+        <Class IRI="#clastic_rock"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sorting"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#thickness"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#very_poorly_sorting"/>
+        <Class IRI="#sorting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#very_well_sorting"/>
+        <Class IRI="#sorting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#well_sorting"/>
+        <Class IRI="#sorting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#width"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#claystone"/>
+        <Class IRI="#sandstone"/>
+        <Class IRI="#siltstone"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#extremely_poorly_sorting"/>
+        <Class IRI="#moderate_sorting"/>
+        <Class IRI="#moderately_well_sorting"/>
+        <Class IRI="#poorly_sorting"/>
+        <Class IRI="#very_poorly_sorting"/>
+        <Class IRI="#very_well_sorting"/>
+        <Class IRI="#well_sorting"/>
+    </DisjointClasses>
+    <DisjointUnion>
+        <Class IRI="#sorting"/>
+        <Class IRI="#extremely_poorly_sorting"/>
+        <Class IRI="#moderate_sorting"/>
+        <Class IRI="#moderately_well_sorting"/>
+        <Class IRI="#poorly_sorting"/>
+        <Class IRI="#very_poorly_sorting"/>
+        <Class IRI="#very_well_sorting"/>
+        <Class IRI="#well_sorting"/>
+    </DisjointUnion>
+    <ClassAssertion>
+        <Class IRI="#Sedimentary_Object"/>
+        <NamedIndividual IRI="#obj_1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002002"/>
+        <NamedIndividual IRI="#obj_1"/>
+        <NamedIndividual IRI="#obj_2"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0001015"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0001025"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#composed_of"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    </SubObjectPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Angularity</IRI>
+        <Literal>Angularity is-a Quality (BFO) which is quality-of the Clastic Rock and is given by the shape of the corners of the Collection of Grains of the Clastic Rock (Tucker, 2011).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Angularity</IRI>
+        <Literal>angularity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Geometry</IRI>
+        <Literal>Geometry is-a Quality (BFO) which is a quality-of the Geological Object (GeoCore) and describes the external three-dimensional form of the Geological Object (GeoCore).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Geometry</IRI>
+        <Literal>geometry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Induration</IRI>
+        <Literal>Induration is-a Quality (BFO) which is quality-of the Sedimentary Rock  and is the hardness of the Sedimentary Rock.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Induration</IRI>
+        <Literal>induration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Sedimentary_Object</IRI>
+        <Literal>Sedimentary Object is-a Geological Object which is constituted-by some Sedimentary Rock  and generated-by some Sedimentary Process. It supplies its own identity criteria, it holds unity criteria for all its instances and is rigid, since it is not possible for a Sedimentary Object to stop being a Sedimentary Object.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sedimentary_Object</IRI>
+        <Literal>sedimentary object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Sphericity</IRI>
+        <Literal>Sphericity is-a Quality (BFO) which is quality-of the Clastic Rock and is given by how closely the shape of the Collection of Grains of the Clastic Rock  resembles that of a perfect sphere (Tucker, 2011)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sphericity</IRI>
+        <Literal>sphericity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#clast_complex</IRI>
+        <Literal>Clastic Complex is-a Geological Object  which is composed-of more than one Clastic Units. It carries identity criteria from Clastic Units, holds unity and rigidity criteria for all its instances.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#clast_complex</IRI>
+        <Literal>clastic complex</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#clast_unit</IRI>
+        <Literal>Clastic Unit is-a Sedimentary Object  which is constituted-by some Clastic Rock  and generated-by some Mechanical Process. The Clastic Unit  supplies its own identity criteria, it holds unity criteria for all its instances, and is rigid, since it is not possible for a Clastic Unit  to stop being a Clastic Unit. The Clastic Unit can be considered homogeneous even, though it is constituted-by some Clastic Rock.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#clast_unit</IRI>
+        <Literal>clast unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#clastic_rock</IRI>
+        <Literal>Clastic Rock is-a Sedimentary Rock which is constituted by a Collection of Grains form pre-existing Rock (GeoCore) and generated-by one or more Mechanical Process. It supplies its own identity criteria, holds anti-unity for being a Collection of Grains, and is rigid for being unable to cease being a clastic rock.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#clastic_rock</IRI>
+        <Literal>clastic rock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#composed_of</IRI>
+        <Literal>Composed of is a parthood relation between a whole (object) and its part (object), discontinuities are distinct between its parts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#composed_of</IRI>
+        <Literal>composed of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#degree_of_weathering</IRI>
+        <Literal>Degree of weathering is-a Quality (BFO) which is quality-of the Sedimentary Rock  and represents the state of weathering of the Sedimentary Rock .</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#degree_of_weathering</IRI>
+        <Literal>degree of weathering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#depositional_complex</IRI>
+        <Literal>Depositional Complex is-a Clastic Complex which is composed-of more than one Depositional Unit. It carries identity criteria, holds unity, and anti-rigidity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#depositional_complex</IRI>
+        <Literal>depositional complex</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#depositional_system</IRI>
+        <Literal>Depositional System is-an Object Aggregate (BFO) which is a three dimensional aggregate of some Depositional Unit  and has-member some generically-related Depositional Unit . The Depositional System supplies its own identity criteria because it is not just a collection of Depositional Unit, it also a particular Spatial Region (BFO) which is a geographical location and extension. It holds unity criteria and is rigid.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#depositional_system</IRI>
+        <Literal>depositional system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#depositional_unit</IRI>
+        <Literal>Depositional Unit is-a Clastic Unit  which is member-of a Depositional System . It carries identity because being a member of a Depositional System  will not change its identity criteria; it holds unity because the Clastic Unit  is indivisible; it is anti-rigid because, without the “member-of” relation, a Depositional Unit  is just a Clastic Unit  that formed by some Sedimentary Process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#depositional_unit</IRI>
+        <Literal>depositional unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#extremely_poorly_sorting</IRI>
+        <Literal>𝜙 (positive real number value) &gt;4.00</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#extremely_poorly_sorting</IRI>
+        <Literal>extremly poorly sorting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#forming_duration</IRI>
+        <Literal>forming duration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#grain_size</IRI>
+        <Literal>Grain Size is-a Quality (BFO) which is quality-of the Clastic Rock  and is given by the diameter of the major Grain of the Clastic Rock (Gautam Kumar, 2016).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#grain_size</IRI>
+        <Literal>grain size</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#length</IRI>
+        <Literal>Length is-a Quality (BFO) which is a quality-of the Geological Object (GeoCore) which measures the maximal longitudinal distance between the two ends of a Geological Object (GeoCore).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#length</IRI>
+        <Literal>length</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#permeability</IRI>
+        <Literal>Permeability is-a Quality (BFO) which is quality-of the Rock (GeoCore). It measures the conductivity of the pores to determine the capability of the Rock(GeoCore) that how much can fluids flow through the Rock(GeoCore)in response to an applied pressure gradient (Ohen and Kersey, 1992).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#permeability</IRI>
+        <Literal>permeability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#porosity</IRI>
+        <Literal>Porosity is-a Quality (BFO) which is quality-of the Rock (GeoCore). It is the ratio of the void space to the bulk volume and is reported as a decimal. Porosity determines reservoir storage capacity (Cone and Kersey, 1992).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#porosity</IRI>
+        <Literal>porosity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#sand_content</IRI>
+        <Literal>Sand Content is-a Quality (BFO) which is quality-of the Clastic Rock and is the ratio of the Collection of Grains that has diameters between 0.0625-2mm to the total volume of the Clastic Rock.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sand_content</IRI>
+        <Literal>sand content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sedimentary_process</IRI>
+        <Literal>sedimentary process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#sedimentary_rock</IRI>
+        <Literal>Sedimentary Rock is-a Rock (GeoCore) which is constituted-by a Collection of Grains and is generated-by one or more Sedimentary Process. It. It supplies its own identity criteria, holds anti-unity for being an amount of matter, and is rigid for being unable to cease being a Sedimentary Rock.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sedimentary_rock</IRI>
+        <Literal>sedimentary rock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#sorting</IRI>
+        <Literal>Sorting is-a Quality (BFO) which is quality-of the Clastic Rock  and defined as the standard deviation calculated from phi values of the size of the Collection of Grains of the Clastic Rock  (Folk, 1980).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sorting</IRI>
+        <Literal>sorting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#thickness</IRI>
+        <Literal>Thickness is-a Quality (BFO) which is a quality-of the Geological Object (GeoCore) which measures the maximal vertical distance between the two ends of a Geological Object (GeoCore).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#thickness</IRI>
+        <Literal>thickness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#width</IRI>
+        <Literal>Width is-a Quality (BFO) which is a quality-of the Geological Object (GeoCore) which measures the maximal transverse distance between the two ends of a Geological Object (GeoCore).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#width</IRI>
+        <Literal>width</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
