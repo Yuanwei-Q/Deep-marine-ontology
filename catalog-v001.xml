@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology/1.0" uri="https://raw.githubusercontent.com/BDI-UFRGS/GeoCoreOntology/master/GeoCoreOntology.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1591626551553" name="http://www.semanticweb.org/hp/ontologies/2020/5/untitled-ontology-30" uri="Yuanwei-deep-marine%20ontology%20-%20副本.owl"/>
+    </group>
+</catalog>
